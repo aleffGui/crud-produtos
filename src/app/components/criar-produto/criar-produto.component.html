@@ -1,0 +1,8 @@
+<h1>Criar Produto</h1>
+<form [formGroup]="formCadastrar" (ngSubmit)="submitForm()">
+    <label>Nome: </label>
+    <input type="text" formControlName="nome"><br>
+    <label>Preço: </label>
+    <input type="number" formControlName="preco">
+    <button type="submit">Salvar</button>
+</form>
