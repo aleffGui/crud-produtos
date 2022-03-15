@@ -33,7 +33,7 @@ export class CriarProdutoComponent implements OnInit {
     this.salvar();
   }
   public salvar() : void {
-    if(this.produtoService.inserirProduto(new Produto(this.formCadastrar.controls["nome"].value, this.formCadastrar.controls["preco"].value))) {
+    if(this.produtoService.inserirProduto(new Produto(this.formCadastrar.controls['nome'].value, this.formCadastrar.controls['preco'].value))) {
       alert("Produto salvo com sucesso!");
       this.router.navigate(["/listaDeProdutos", this.formCadastrar.controls["nome"].value, this.formCadastrar.controls["preco"].value])
     } else {
